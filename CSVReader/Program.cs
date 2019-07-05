@@ -38,7 +38,7 @@ namespace CSVReader
                 {
                     var genericCSVData = new GenericCSVData();
                     genericCSVData.ValuePairs = new Dictionary<string, string>();
-                    var values = currentLine.Split(',');
+                    var values = currentLine.Split(columnSeperator);
 
                     for (int i = 0; i < columnNames.Count; i++)
                     {
